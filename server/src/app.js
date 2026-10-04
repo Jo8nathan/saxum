@@ -16,6 +16,7 @@ const jobsRouter = require('./routes/jobs');
 const leaderboardRouter = require('./routes/leaderboard');
 const achievementsRouter = require('./routes/achievements');
 const tutorialRouter = require('./routes/tutorial');
+const identityRouter = require('./routes/identity');
 
 function createApp() {
   const app = express();
@@ -49,6 +50,7 @@ function createApp() {
   app.use('/api/leaderboard', leaderboardRouter);
   app.use('/api/achievements', achievementsRouter);
   app.use('/api/tutorial', tutorialRouter);
+  app.use('/api/identity', identityRouter);
 
   app.use('/api', (req, res) => {
     res.status(404).json({ error: 'Not found' });

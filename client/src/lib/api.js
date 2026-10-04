@@ -59,6 +59,9 @@ function query(params = {}) {
 export const api = {
   health: () => request('/health'),
 
+  updateIdentity: (identityId, label) =>
+    request('/identity', { method: 'POST', body: { identity_id: identityId, label } }),
+
   generateWorld: (payload) =>
     request('/worlds/generate', { method: 'POST', body: payload, sendGroqKey: true }),
 
