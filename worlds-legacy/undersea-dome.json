@@ -1,0 +1,358 @@
+{
+  "title": "Undersea Dome",
+  "description": "(Legacy import from the original Saxum) Undersea dome: A massive dome looms above you. Outside, you see sea life. Large, beautiful creatures (card text truncated; full description not visible)",
+  "image_style": "Realistic",
+  "cover_image_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJsb2Mtc2t5LWdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzUgMC4wOCAyNDApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzggMC4xMCAyMzgpO3N0b3Atb3BhY2l0eTowLjkiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzIgMC4wNiAyMzUpO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjbG9jLXNreS1ncmFkKSIvPgogICAgICA8cmVjdCB5PSIyODAiIHdpZHRoPSI4MDAiIGhlaWdodD0iMTIwIiBmaWxsPSJva2xjaCgwLjMyIDAuMDYgMjM1KSIgb3BhY2l0eT0iMC45Ii8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjM1MCIgeT0iMTAwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEyMCIgZmlsbD0ib2tsY2goMC40MCAwLjA4IDI0MCkiICBmaWx0ZXI9ImRyb3Atc2hhZG93KDRweCA2cHggMTJweCByZ2JhKDAsMCwwLDAuNSkpIi8+CiAgICAgICAgPGVsbGlwc2UgY3g9IjQwMCIgY3k9IjE1MCIgcng9IjQwIiByeT0iNjAiIGZpbGw9Im9rbGNoKDAuMiAwLjA1IDI0MCkiIG9wYWNpdHk9IjAuOCIgLz4KICAgICAgCiAgICAgICAgPHJlY3QgeD0iOTQiIHk9IjExNiIgd2lkdGg9IjExMiIgaGVpZ2h0PSI4NCIgZmlsbD0ib2tsY2goMC4zNiAwLjA3IDI0MikiICBmaWx0ZXI9ImRyb3Atc2hhZG93KDRweCA2cHggMTJweCByZ2JhKDAsMCwwLDAuNSkpIi8+CiAgICAgIAogICAgICA8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMzIwIiByeD0iMTIiIHJ5PSI4IiBmaWxsPSJva2xjaCgwLjM4IDAuMDYgMjM4KSIgb3BhY2l0eT0iMC44IiAvPgogICAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iYmxhY2siIG9wYWNpdHk9IjAuMjUiLz4KICAgICAgPHRleHQgeD0iNDAwIiB5PSIzNzAiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjk1IiBzdHlsZT0idGV4dC1zaGFkb3c6IDNweCAzcHggNnB4IHJnYmEoMCwwLDAsMC44KSI+RW50cmFuY2UgSGFsbDwvdGV4dD4KICAgIDwvc3ZnPg==",
+  "author_label": "Jo8nathan",
+  "owner_id": "legacy-import",
+  "is_public": true,
+  "rooms": [
+    {
+      "name": "Entrance Hall",
+      "description": "A grand entrance with soft blue lighting, large windows showing sea life outside, and a massive dome above. The sound of gentle waves fills the air. A large stone door lies ahead.",
+      "image_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJsb2Mtc2t5LWdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzUgMC4wOCAyNDApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzggMC4xMCAyMzgpO3N0b3Atb3BhY2l0eTowLjkiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzIgMC4wNiAyMzUpO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjbG9jLXNreS1ncmFkKSIvPgogICAgICA8cmVjdCB5PSIyODAiIHdpZHRoPSI4MDAiIGhlaWdodD0iMTIwIiBmaWxsPSJva2xjaCgwLjMyIDAuMDYgMjM1KSIgb3BhY2l0eT0iMC45Ii8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjM1MCIgeT0iMTAwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEyMCIgZmlsbD0ib2tsY2goMC40MCAwLjA4IDI0MCkiICBmaWx0ZXI9ImRyb3Atc2hhZG93KDRweCA2cHggMTJweCByZ2JhKDAsMCwwLDAuNSkpIi8+CiAgICAgICAgPGVsbGlwc2UgY3g9IjQwMCIgY3k9IjE1MCIgcng9IjQwIiByeT0iNjAiIGZpbGw9Im9rbGNoKDAuMiAwLjA1IDI0MCkiIG9wYWNpdHk9IjAuOCIgLz4KICAgICAgCiAgICAgICAgPHJlY3QgeD0iOTQiIHk9IjExNiIgd2lkdGg9IjExMiIgaGVpZ2h0PSI4NCIgZmlsbD0ib2tsY2goMC4zNiAwLjA3IDI0MikiICBmaWx0ZXI9ImRyb3Atc2hhZG93KDRweCA2cHggMTJweCByZ2JhKDAsMCwwLDAuNSkpIi8+CiAgICAgIAogICAgICA8ZWxsaXBzZSBjeD0iMTAwIiBjeT0iMzIwIiByeD0iMTIiIHJ5PSI4IiBmaWxsPSJva2xjaCgwLjM4IDAuMDYgMjM4KSIgb3BhY2l0eT0iMC44IiAvPgogICAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iYmxhY2siIG9wYWNpdHk9IjAuMjUiLz4KICAgICAgPHRleHQgeD0iNDAwIiB5PSIzNzAiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjk1IiBzdHlsZT0idGV4dC1zaGFkb3c6IDNweCAzcHggNnB4IHJnYmEoMCwwLDAsMC44KSI+RW50cmFuY2UgSGFsbDwvdGV4dD4KICAgIDwvc3ZnPg==",
+      "is_secret": false,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "Upper Deck",
+      "description": "A narrow deck with a great view of the dome, sunlight filtering through the water above. The sound of seagulls echoes through the air.",
+      "image_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJsb2Mtc2t5LWdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMjUgMC4wOCAyNTApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzIgMC4xMCAyNDgpO3N0b3Atb3BhY2l0eTowLjkiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzAgMC4wNiAyNDUpO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjbG9jLXNreS1ncmFkKSIvPgogICAgICA8cmVjdCB5PSIyODAiIHdpZHRoPSI4MDAiIGhlaWdodD0iMTIwIiBmaWxsPSJva2xjaCgwLjMwIDAuMDYgMjQ1KSIgb3BhY2l0eT0iMC45Ii8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjM1MCIgeT0iMTAwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjYiIGZpbGw9Im9rbGNoKDAuMzUgMC4xMiAyMzApIiAgZmlsdGVyPSJkcm9wLXNoYWRvdyg0cHggNnB4IDEycHggcmdiYSgwLDAsMCwwLjUpKSIvPgogICAgICAKICAgICAgICA8cmVjdCB4PSI1NzAiIHk9IjEzMCIgd2lkdGg9IjcwIiBoZWlnaHQ9IjcwIiByeD0iNiIgZmlsbD0ib2tsY2goMC4yOCAwLjA4IDI0MCkiICBmaWx0ZXI9ImRyb3Atc2hhZG93KDRweCA2cHggMTJweCByZ2JhKDAsMCwwLDAuNSkpIi8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjYzMCIgeT0iMTYwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHJ4PSI2IiBmaWx0ZXI9ImRyb3Atc2hhZG93KDRweCA2cHggMTJweCByZ2JhKDAsMCwwLDAuNSkpIi8+CiAgICAgIAogICAgICAgIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjMyMCIgcj0iOCIgZmlsbD0ib2tsY2goMC44NSAwLjI1IDYwKSIgb3BhY2l0eT0iMC45IiBmaWx0ZXI9ImJsdXIoNHB4KSIvPgogICAgICAgIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjMyMCIgcj0iNSIgZmlsbD0ib2tsY2goMC45NSAwLjE1IDUwKSIgb3BhY2l0eT0iMC45NSIvPgogICAgICA8Y2lyY2xlIGN4PSIxODUiIGN5PSIzNDAiIHI9IjYiIGZpbGw9Im9rbGNoKDAuNTUgMC4yNSAxODApIiBvcGFjaXR5PSIwLjc1Ii8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJibGFjayIgb3BhY2l0eT0iMC4wNSIvPgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjM3MCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuOTUiIHN0eWxlPSJ0ZXh0LXNoYWRvdzogM3B4IDNweCA2cHggcmdiYSgwLDAsMCwwLjgpIj5VcHBlciBEZWNrPC90ZXh0PgogICAgPC9zdmc+",
+      "is_secret": false,
+      "x": 1,
+      "y": 0
+    },
+    {
+      "name": "Side Passage",
+      "description": "A narrow passage with dim lighting, the smell of saltwater and seaweed filling the air. The sound of dripping water echoes through the passage.",
+      "image_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJsb2Mtc2t5LWdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMjIgMC4wOCAyNTApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMjggMC4wNiAyNDgpO3N0b3Atb3BhY2l0eTowLjkiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzAgMC4wNSAyNDUpO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjbG9jLXNreS1ncmFkKSIvPgogICAgICA8cmVjdCB5PSIyODAiIHdpZHRoPSI4MDAiIGhlaWdodD0iMTIwIiBmaWxsPSJva2xjaCgwLjMwIDAuMDUgMjQ1KSIgb3BhY2l0eT0iMC45Ii8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjcwIiB5PSI4MCIgd2lkdGg9IjE2MCIgaGVpZ2h0PSIxMjAiIGZpbGw9Im9rbGNoKDAuMzIgMC4wNiAyNTApIiAgZmlsdGVyPSJkcm9wLXNoYWRvdyg0cHggNnB4IDEycHggcmdiYSgwLDAsMCwwLjUpKSIvPgogICAgICAKICAgICAgICA8cmVjdCB4PSI1NzAiIHk9IjgwIiB3aWR0aD0iMTYwIiBoZWlnaHQ9IjEyMCIgZmlsbD0ib2tsY2goMC4zMiAwLjA2IDI1MCkiICBmaWx0ZXI9ImRyb3Atc2hhZG93KDRweCA2cHggMTJweCByZ2JhKDAsMCwwLDAuNSkpIi8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjM2NSIgeT0iMTMwIiB3aWR0aD0iNzAiIGhlaWdodD0iODQiIGZpbGw9Im9rbGNoKDAuMjUgMC4wOCAyNDApIiAgZmlsdGVyPSJkcm9wLXNoYWRvdyg0cHggNnB4IDEycHggcmdiYSgwLDAsMCwwLjUpKSIvPgogICAgICAgIDxlbGxpcHNlIGN4PSI0MDAiIGN5PSIxNjUiIHJ4PSIyOCIgcnk9IjQyIiBmaWxsPSJva2xjaCgwLjIgMC4wNSAyNDApIiBvcGFjaXR5PSIwLjgiIC8+CiAgICAgIAogICAgICAKICAgICAgICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIzMjAiIHI9IjgiIGZpbGw9Im9rbGNoKDAuODUgMC4yNSA2MCkiIG9wYWNpdHk9IjAuOSIgZmlsdGVyPSJibHVyKDRweCkiLz4KICAgICAgICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIzMjAiIHI9IjUiIGZpbGw9Im9rbGNoKDAuOTUgMC4xNSA1MCkiIG9wYWNpdHk9IjAuOTUiLz4KICAgICAgPGNpcmNsZSBjeD0iMTg1IiBjeT0iMzQwIiByPSI2IiBmaWxsPSJva2xjaCgwLjM1IDAuMDUgMjU1KSIgb3BhY2l0eT0iMC43NSIvPgogICAgICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgZmlsbD0iYmxhY2siIG9wYWNpdHk9IjAuMjUiLz4KICAgICAgPHRleHQgeD0iNDAwIiB5PSIzNzAiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWksIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjgiIGZvbnQtd2VpZ2h0PSI3MDAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBvcGFjaXR5PSIwLjk1IiBzdHlsZT0idGV4dC1zaGFkb3c6IDNweCAzcHggNnB4IHJnYmEoMCwwLDAsMC44KSI+U2lkZSBQYXNzYWdlPC90ZXh0PgogICAgPC9zdmc+",
+      "is_secret": false,
+      "x": 2,
+      "y": 0
+    },
+    {
+      "name": "Lower Depths",
+      "description": "A dark and mysterious place, the sound of unknown creatures lurking in the shadows. The water pressure is extreme.",
+      "image_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJsb2Mtc2t5LWdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuNSAwLjEyIDI0MCk7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3R5bGU9InN0b3AtY29sb3I6b2tsY2goMC40NSAwLjEgMTgwKTtzdG9wLW9wYWNpdHk6MC45IiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpva2xjaCgwLjM1IDAuMDggMTIwKTtzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJ1cmwoI2xvYy1za3ktZ3JhZCkiLz4KICAgICAgPHJlY3QgeT0iMjgwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjEyMCIgZmlsbD0ib2tsY2goMC4zNSAwLjA4IDEyMCkiIG9wYWNpdHk9IjAuOSIvPgogICAgICAKICAgICAgCiAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJibGFjayIgb3BhY2l0eT0iMC4wNSIvPgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjM3MCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuOTUiIHN0eWxlPSJ0ZXh0LXNoYWRvdzogM3B4IDNweCA2cHggcmdiYSgwLDAsMCwwLjgpIj5Mb3dlciBEZXB0aHM8L3RleHQ+CiAgICA8L3N2Zz4=",
+      "is_secret": false,
+      "x": 3,
+      "y": 0
+    },
+    {
+      "name": "Bridge Crossing",
+      "description": "A rickety bridge spanning a vast underwater chasm, the sound of rushing water below. The bridge creaks in the current.",
+      "image_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJsb2Mtc2t5LWdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMjUgMC4wOCAyNTApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzIgMC4xMCAyNDgpO3N0b3Atb3BhY2l0eTowLjkiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzAgMC4wNiAyNDUpO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjbG9jLXNreS1ncmFkKSIvPgogICAgICA8cmVjdCB5PSIyODAiIHdpZHRoPSI4MDAiIGhlaWdodD0iMTIwIiBmaWxsPSJva2xjaCgwLjMwIDAuMDYgMjQ1KSIgb3BhY2l0eT0iMC45Ii8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjM1MCIgeT0iMTAwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjYiIGZpbGw9Im9rbGNoKDAuMzUgMC4xMiAyMzApIiAgZmlsdGVyPSJkcm9wLXNoYWRvdyg0cHggNnB4IDEycHggcmdiYSgwLDAsMCwwLjUpKSIvPgogICAgICAKICAgICAgICA8cmVjdCB4PSI1NzAiIHk9IjEzMCIgd2lkdGg9IjcwIiBoZWlnaHQ9IjcwIiByeD0iNiIgZmlsbD0ib2tsY2goMC4yOCAwLjA4IDI0MCkiICBmaWx0ZXI9ImRyb3Atc2hhZG93KDRweCA2cHggMTJweCByZ2JhKDAsMCwwLDAuNSkpIi8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjYzMCIgeT0iMTYwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHJ4PSI2IiBmaWx0ZXI9ImRyb3Atc2hhZG93KDRweCA2cHggMTJweCByZ2JhKDAsMCwwLDAuNSkpIi8+CiAgICAgIAogICAgICAgIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjMyMCIgcj0iOCIgZmlsbD0ib2tsY2goMC44NSAwLjI1IDYwKSIgb3BhY2l0eT0iMC45IiBmaWx0ZXI9ImJsdXIoNHB4KSIvPgogICAgICAgIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjMyMCIgcj0iNSIgZmlsbD0ib2tsY2goMC45NSAwLjE1IDUwKSIgb3BhY2l0eT0iMC45NSIvPgogICAgICA8Y2lyY2xlIGN4PSIxODUiIGN5PSIzNDAiIHI9IjYiIGZpbGw9Im9rbGNoKDAuNTUgMC4yNSAxODApIiBvcGFjaXR5PSIwLjc1Ii8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJibGFjayIgb3BhY2l0eT0iMC4wNSIvPgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjM3MCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuOTUiIHN0eWxlPSJ0ZXh0LXNoYWRvdzogM3B4IDNweCA2cHggcmdiYSgwLDAsMCwwLjgpIj5CcmlkZ2UgQ3Jvc3Npbmc8L3RleHQ+CiAgICA8L3N2Zz4=",
+      "is_secret": false,
+      "x": 0,
+      "y": 1
+    },
+    {
+      "name": "Underwater Cavern",
+      "description": "A vast cavern filled with glittering crystals, the sound of dripping water echoing off the walls. A sense of awe-inspiring wonder.",
+      "image_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJsb2Mtc2t5LWdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuNSAwLjEyIDI0MCk7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3R5bGU9InN0b3AtY29sb3I6b2tsY2goMC40NSAwLjEgMTgwKTtzdG9wLW9wYWNpdHk6MC45IiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzUgMC4wOCAxMjApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzUgMC4wOCAxMjApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpva2xjaCgwLjM1IDAuMDggMTIwKTtzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJ1cmwoI2xvYy1za3ktZ3JhZCkiLz4KICAgICAgPHJlY3QgeT0iMjgwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjEyMCIgZmlsbD0ib2tsY2goMC4zNSAwLjA4IDEyMCkiIG9wYWNpdHk9IjAuOSIvPgogICAgICAKICAgICAgCiAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJibGFjayIgb3BhY2l0eT0iMC4wNSIvPgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjM3MCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuOTUiIHN0eWxlPSJ0ZXh0LXNoYWRvdzogM3B4IDNweCA2cHggcmdiYSgwLDAsMCwwLjgpIj5VbmRlcndhdGVyIENhdmVybjwvdGV4dD4KICAgIDwvc3ZnPg==",
+      "is_secret": false,
+      "x": 1,
+      "y": 1
+    },
+    {
+      "name": "Submarine Bay",
+      "description": "A bay filled with submarines, the sound of machinery humming in the background. A sense of excitement and adventure.",
+      "image_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJsb2Mtc2t5LWdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMjAgMC4wNSAyNjApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzIgMC4wOCAyNTUpO3N0b3Atb3BhY2l0eTowLjkiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMjggMC4wNCAyNTApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjbG9jLXNreS1ncmFkKSIvPgogICAgICA8cmVjdCB5PSIyODAiIHdpZHRoPSI4MDAiIGhlaWdodD0iMTIwIiBmaWxsPSJva2xjaCgwLjI4IDAuMDQgMjUwKSIgb3BhY2l0eT0iMC45Ii8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjM1MCIgeT0iMTAwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEyMCIgZmlsbD0ib2tsY2goMC4zNSAwLjA4IDI0MCkiICBmaWx0ZXI9ImRyb3Atc2hhZG93KDRweCA2cHggMTJweCByZ2JhKDAsMCwwLDAuNSkpIi8+CiAgICAgICAgPGVsbGlwc2UgY3g9IjQwMCIgY3k9IjE1MCIgcng9IjQwIiByeT0iNjAiIGZpbGw9Im9rbGNoKDAuMiAwLjA1IDI0MCkiIG9wYWNpdHk9IjAuOCIgLz4KICAgICAgCiAgICAgICAgPHJlY3QgeD0iOTQiIHk9IjExNiIgd2lkdGg9IjExMiIgaGVpZ2h0PSI4NCIgZmlsbD0ib2tsY2goMC40MCAwLjA2IDI1MCkiICBmaWx0ZXI9ImRyb3Atc2hhZG93KDRweCA2cHggMTJweCByZ2JhKDAsMCwwLDAuNSkpIi8+CiAgICAgIAogICAgICA8cmVjdCB4PSI2MTUiIHk9IjEzMCIgd2lkdGg9IjcwIiBoZWlnaHQ9IjcwIiByeD0iNiIgZmlsbD0ib2tsY2goMC4zOCAwLjEwIDIzMCkiICBmaWx0ZXI9ImRyb3Atc2hhZG93KDRweCA2cHggMTJweCByZ2JhKDAsMCwwLDAuNSkpIi8+CiAgICAgIAogICAgICAgIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjMyMCIgcj0iOCIgZmlsbD0ib2tsY2goMC44NSAwLjI1IDYwKSIgb3BhY2l0eT0iMC45IiBmaWx0ZXI9ImJsdXIoNHB4KSIvPgogICAgICAgIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjMyMCIgcj0iNSIgZmlsbD0ib2tsY2goMC45NSAwLjE1IDUwKSIgb3BhY2l0eT0iMC45NSIvPgogICAgICA8Y2lyY2xlIGN4PSIxODUiIGN5PSIzNDAiIHI9IjYiIGZpbGw9Im9rbGNoKDAuNDIgMC4wNSAyNDUpIiBvcGFjaXR5PSIwLjc1Ii8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJibGFjayIgb3BhY2l0eT0iMC4wNSIvPgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjM3MCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuOTUiIHN0eWxlPSJ0ZXh0LXNoYWRvdzogM3B4IDNweCA2cHggcmdiYSgwLDAsMCwwLjgpIj5TdWJtYXJpbmUgQmF5PC90ZXh0PgogICAgPC9zdmc+",
+      "is_secret": false,
+      "x": 2,
+      "y": 1
+    },
+    {
+      "name": "Kelp Forest",
+      "description": "A forest of kelp swaying in the current, the sound of seaweed rustling in the water. A sense of serenity and peace.",
+      "image_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJsb2Mtc2t5LWdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuNSAwLjEyIDI0MCk7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3R5bGU9InN0b3AtY29sb3I6b2tsY2goMC40NSAwLjEgMTgwKTtzdG9wLW9wYWNpdHk6MC45IiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzUgMC4wOCAxMjApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzUgMC4wOCAxMjApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpva2xjaCgwLjM1IDAuMDggMTIwKTtzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJ1cmwoI2xvYy1za3ktZ3JhZCkiLz4KICAgICAgPHJlY3QgeT0iMjgwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjEyMCIgZmlsbD0ib2tsY2goMC4zNSAwLjA4IDEyMCkiIG9wYWNpdHk9IjAuOSIvPgogICAgICAKICAgICAgCiAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJibGFjayIgb3BhY2l0eT0iMC4wNSIvPgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjM3MCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuOTUiIHN0eWxlPSJ0ZXh0LXNoYWRvdzogM3B4IDNweCA2cHggcmdiYSgwLDAsMCwwLjgpIj5LZWxwIEZvcmVzdDwvdGV4dD4KICAgIDwvc3ZnPg==",
+      "is_secret": false,
+      "x": 3,
+      "y": 1
+    },
+    {
+      "name": "Deep Ocean",
+      "description": "The deepest part of the ocean, the sound of pressure and darkness all around. A sense of fear and respect.",
+      "image_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJsb2Mtc2t5LWdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuNSAwLjEyIDI0MCk7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3R5bGU9InN0b3AtY29sb3I6b2tsY2goMC40NSAwLjEgMTgwKTtzdG9wLW9wYWNpdHk6MC45IiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzUgMC4wOCAxMjApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzUgMC4wOCAxMjApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzUgMC4wOCAxMjApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzUgMC4wOCAxMjApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjpva2xjaCgwLjM1IDAuMDggMTIwKTtzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgICA8L2RlZnM+CiAgICAgIDxyZWN0IHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJ1cmwoI2xvYy1za3ktZ3JhZCkiLz4KICAgICAgPHJlY3QgeT0iMjgwIiB3aWR0aD0iODAwIiBoZWlnaHQ9IjEyMCIgZmlsbD0ib2tsY2goMC4zNSAwLjA4IDEyMCkiIG9wYWNpdHk9IjAuOSIvPgogICAgICAKICAgICAgCiAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJibGFjayIgb3BhY2l0eT0iMC4wNSIvPgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjM3MCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuOTUiIHN0eWxlPSJ0ZXh0LXNoYWRvdzogM3B4IDNweCA2cHggcmdiYSgwLDAsMCwwLjgpIj5EZWVwIE9jZWFuPC90ZXh0PgogICAgPC9zdmc+",
+      "is_secret": false,
+      "x": 0,
+      "y": 2
+    },
+    {
+      "name": "Submarine Interior",
+      "description": "The inside of a submarine, the sound of machinery and controls beeping. A sense of excitement and adventure.",
+      "image_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJsb2Mtc2t5LWdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMjUgMC4wOCAyNTApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzIgMC4xMCAyNDgpO3N0b3Atb3BhY2l0eTowLjkiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzAgMC4wNiAyNDUpO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjbG9jLXNreS1ncmFkKSIvPgogICAgICA8cmVjdCB5PSIyODAiIHdpZHRoPSI4MDAiIGhlaWdodD0iMTIwIiBmaWxsPSJva2xjaCgwLjMwIDAuMDYgMjQ1KSIgb3BhY2l0eT0iMC45Ii8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjM1MCIgeT0iMTAwIiB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgcng9IjYiIGZpbGw9Im9rbGNoKDAuMzUgMC4xMiAyMzApIiAgZmlsdGVyPSJkcm9wLXNoYWRvdyg0cHggNnB4IDEycHggcmdiYSgwLDAsMCwwLjUpKSIvPgogICAgICAKICAgICAgICA8cmVjdCB4PSI1NzAiIHk9IjEzMCIgd2lkdGg9IjcwIiBoZWlnaHQ9IjcwIiByeD0iNiIgZmlsbD0ib2tsY2goMC4yOCAwLjA4IDI0MCkiICBmaWx0ZXI9ImRyb3Atc2hhZG93KDRweCA2cHggMTJweCByZ2JhKDAsMCwwLDAuNSkpIi8+CiAgICAgIAogICAgICAgIDxyZWN0IHg9IjYzMCIgeT0iMTYwIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHJ4PSI2IiBmaWx0ZXI9ImRyb3Atc2hhZG93KDRweCA2cHggMTJweCByZ2JhKDAsMCwwLDAuNSkpIi8+CiAgICAgIAogICAgICAgIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjMyMCIgcj0iOCIgZmlsbD0ib2tsY2goMC44NSAwLjI1IDYwKSIgb3BhY2l0eT0iMC45IiBmaWx0ZXI9ImJsdXIoNHB4KSIvPgogICAgICAgIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjMyMCIgcj0iNSIgZmlsbD0ib2tsY2goMC45NSAwLjE1IDUwKSIgb3BhY2l0eT0iMC45NSIvPgogICAgICA8Y2lyY2xlIGN4PSIxODUiIGN5PSIzNDAiIHI9IjYiIGZpbGw9Im9rbGNoKDAuNTUgMC4yNSAxODApIiBvcGFjaXR5PSIwLjc1Ii8+CiAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJibGFjayIgb3BhY2l0eT0iMC4wNSIvPgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjM3MCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuOTUiIHN0eWxlPSJ0ZXh0LXNoYWRvdzogM3B4IDNweCA2cHggcmdiYSgwLDAsMCwwLjgpIj5TdWJtYXJpbmUgSW50ZXJpb3I8L3RleHQ+CiAgICA8L3N2Zz4=",
+      "is_secret": false,
+      "x": 1,
+      "y": 2
+    }
+  ],
+  "exits": [
+    {
+      "from": 0,
+      "to": 1,
+      "label": "Climb ladder"
+    },
+    {
+      "from": 0,
+      "to": 2,
+      "label": "Enter passage"
+    },
+    {
+      "from": 0,
+      "to": 3,
+      "label": "Descend stairs"
+    },
+    {
+      "from": 1,
+      "to": 0,
+      "label": "Climb down"
+    },
+    {
+      "from": 1,
+      "to": 4,
+      "label": "Cross bridge"
+    },
+    {
+      "from": 2,
+      "to": 0,
+      "label": "Return to entrance"
+    },
+    {
+      "from": 2,
+      "to": 5,
+      "label": "Enter cavern"
+    },
+    {
+      "from": 3,
+      "to": 0,
+      "label": "Ascend stairs"
+    },
+    {
+      "from": 3,
+      "to": 6,
+      "label": "Enter submarine bay"
+    },
+    {
+      "from": 4,
+      "to": 1,
+      "label": "Cross back"
+    },
+    {
+      "from": 4,
+      "to": 7,
+      "label": "Enter kelp forest"
+    },
+    {
+      "from": 5,
+      "to": 2,
+      "label": "Exit cavern"
+    },
+    {
+      "from": 5,
+      "to": 8,
+      "label": "Swim deeper"
+    },
+    {
+      "from": 6,
+      "to": 3,
+      "label": "Return to lower depths"
+    },
+    {
+      "from": 6,
+      "to": 9,
+      "label": "Enter submarine"
+    },
+    {
+      "from": 7,
+      "to": 4,
+      "label": "Exit forest"
+    },
+    {
+      "from": 7,
+      "to": 5,
+      "label": "Follow turtle"
+    },
+    {
+      "from": 8,
+      "to": 5,
+      "label": "Swim back"
+    },
+    {
+      "from": 8,
+      "to": 3,
+      "label": "Explore darkness"
+    },
+    {
+      "from": 9,
+      "to": 6,
+      "label": "Exit submarine"
+    },
+    {
+      "from": 9,
+      "to": 8,
+      "label": "Dive into ocean"
+    }
+  ],
+  "npcs": [
+    {
+      "room": 0,
+      "name": "Dive Master",
+      "role": "A seasoned diver with years of experience",
+      "personality": "",
+      "dialogue_seed": "[Quest Giver] Dive Master is looking for something...\nYou don't have what they're looking for yet.\nWelcome, diver!\nThank you for the Underwater Map! Here, take this Enhanced Tank as a reward."
+    },
+    {
+      "room": 3,
+      "name": "Submarine Pilot",
+      "role": "A gruff but skilled pilot",
+      "personality": "",
+      "dialogue_seed": "[Quest Giver] Submarine Pilot is looking for something...\nYou don't have what they're looking for yet.\n\"What do you want?\"\nThank you for the Sonar Device! Here, take this Submarine Key as a reward."
+    },
+    {
+      "room": 5,
+      "name": "Marine Biologist",
+      "role": "A scientist studying the ocean's creatures",
+      "personality": "",
+      "dialogue_seed": "[Quest Giver] Hello, I'm studying the local wildlife\nMarine Biologist is looking for something...\nYou don't have what they're looking for yet.\nThank you for the Crystal Shard! Here, take this Oceanic Encyclopedia as a reward."
+    }
+  ],
+  "items": [
+    {
+      "room": 0,
+      "name": "Diving Helmet",
+      "description": "[Quest Item] "
+    },
+    {
+      "room": 0,
+      "name": "Sea Anemone",
+      "description": "A colorful anemone swaying gently"
+    },
+    {
+      "room": 0,
+      "name": "Enhanced Tank",
+      "description": "A tank for longer dives"
+    },
+    {
+      "room": 1,
+      "name": "Fishing Rod",
+      "description": "A sturdy rod for catching fish"
+    },
+    {
+      "room": 1,
+      "name": "Lighthouse",
+      "description": "A tall lighthouse standing watch"
+    },
+    {
+      "room": 2,
+      "name": "Underwater Map",
+      "description": "[Quest Item] "
+    },
+    {
+      "room": 2,
+      "name": "Glowing Jellyfish",
+      "description": "A jellyfish lighting the way"
+    },
+    {
+      "room": 3,
+      "name": "Deep-Sea Diving Suit",
+      "description": "A suit for withstanding extreme pressure"
+    },
+    {
+      "room": 3,
+      "name": "Hydrothermal Vent",
+      "description": "A vent emitting hot water and minerals"
+    },
+    {
+      "room": 3,
+      "name": "Submarine Key",
+      "description": "A key to the submarine"
+    },
+    {
+      "room": 4,
+      "name": "Sonar Device",
+      "description": "[Quest Item] "
+    },
+    {
+      "room": 4,
+      "name": "School of Fish",
+      "description": "A school of fish darting through the water"
+    },
+    {
+      "room": 5,
+      "name": "Crystal Shard",
+      "description": "[Quest Item] "
+    },
+    {
+      "room": 5,
+      "name": "Giant Squid",
+      "description": "A massive squid lurking in the shadows"
+    },
+    {
+      "room": 5,
+      "name": "Oceanic Encyclopedia",
+      "description": "A book of oceanic knowledge"
+    },
+    {
+      "room": 6,
+      "name": "Submarine Manual",
+      "description": "A manual for operating submarines"
+    },
+    {
+      "room": 6,
+      "name": "Submarine Dock",
+      "description": "A dock for submarines"
+    },
+    {
+      "room": 7,
+      "name": "Kelp Wrap",
+      "description": "A wrap made from kelp"
+    },
+    {
+      "room": 7,
+      "name": "Sea Turtle",
+      "description": "A turtle gliding through the kelp"
+    },
+    {
+      "room": 8,
+      "name": "Anglerfish",
+      "description": "A fish with a bioluminescent lure"
+    },
+    {
+      "room": 8,
+      "name": "Oceanic Abyss",
+      "description": "The deepest point in the ocean"
+    },
+    {
+      "room": 9,
+      "name": "Submarine Control",
+      "description": "A control panel for the submarine"
+    },
+    {
+      "room": 9,
+      "name": "Submarine Periscope",
+      "description": "A periscope for viewing the outside"
+    }
+  ],
+  "quests": [
+    {
+      "title": "Underwater Map",
+      "objective": "Dive Master at Entrance Hall needs: Underwater Map.",
+      "reward": "Enhanced Tank",
+      "giver_npc": 0
+    },
+    {
+      "title": "Sonar Device",
+      "objective": "Submarine Pilot at Lower Depths needs: Sonar Device.",
+      "reward": "Submarine Key",
+      "giver_npc": 1
+    },
+    {
+      "title": "Crystal Shard",
+      "objective": "Marine Biologist at Underwater Cavern needs: Crystal Shard.",
+      "reward": "Oceanic Encyclopedia",
+      "giver_npc": 2
+    }
+  ]
+}

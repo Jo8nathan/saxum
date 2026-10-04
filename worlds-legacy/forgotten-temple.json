@@ -1,0 +1,149 @@
+{
+  "title": "Forgotten Temple",
+  "description": "(Legacy import from the original Saxum) Forgotten temple: You find yourself at the start of a Forgotten Temple: An ancient temple hidden in a mystical forest. There are strange alien artifacts around this place. It smells of sulfur and.. whiskey? The animals are cute but strange. The path ahead beckons with mystery and promise.",
+  "image_style": "Realistic",
+  "cover_image_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJsb2Mtc2t5LWdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuNSAwLjEyIDI0MCk7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3R5bGU9InN0b3AtY29sb3I6b2tsY2goMC40NSAwLjEgMTgwKTtzdG9wLW9wYWNpdHk6MC45IiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuNDUgMC4xIDE4MCk7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzUgMC4wOCAxMjApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjbG9jLXNreS1ncmFkKSIvPgogICAgICAKICAgICAgCiAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJibGFjayIgb3BhY2l0eT0iMC4wNSIvPgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjM3MCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuOTUiIHN0eWxlPSJ0ZXh0LXNoYWRvdzogM3B4IDNweCA2cHggcmdiYSgwLDAsMCwwLjgpIj5UZW1wbGUgR2F0ZTwvdGV4dD4KICAgIDwvc3ZnPg==",
+  "author_label": "Jo8nathan",
+  "owner_id": "legacy-import",
+  "is_public": true,
+  "rooms": [
+    {
+      "name": "Temple Gate",
+      "description": "Ancient stone structure, overgrown with vines, eerie green mist swirling around. Sulfur and whiskey scents fill the air. Cute, strange creatures flit about.",
+      "image_url": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgICAgPGRlZnM+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJsb2Mtc2t5LWdyYWQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj4KICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuNSAwLjEyIDI0MCk7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjYwJSIgc3R5bGU9InN0b3AtY29sb3I6b2tsY2goMC40NSAwLjEgMTgwKTtzdG9wLW9wYWNpdHk6MC45IiAvPgogICAgICAgICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuNDUgMC4xIDE4MCk7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOm9rbGNoKDAuMzUgMC4wOCAxMjApO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICAgIDwvZGVmcz4KICAgICAgPHJlY3Qgd2lkdGg9IjgwMCIgaGVpZ2h0PSI0MDAiIGZpbGw9InVybCgjbG9jLXNreS1ncmFkKSIvPgogICAgICAKICAgICAgCiAgICAgIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI4MDAiIGhlaWdodD0iNDAwIiBmaWxsPSJibGFjayIgb3BhY2l0eT0iMC4wNSIvPgogICAgICA8dGV4dCB4PSI0MDAiIHk9IjM3MCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZm9udC13ZWlnaHQ9IjcwMCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIG9wYWNpdHk9IjAuOTUiIHN0eWxlPSJ0ZXh0LXNoYWRvdzogM3B4IDNweCA2cHggcmdiYSgwLDAsMCwwLjgpIj5UZW1wbGUgR2F0ZTwvdGV4dD4KICAgIDwvc3ZnPg==",
+      "is_secret": false,
+      "x": 0,
+      "y": 0
+    },
+    {
+      "name": "Grand Hall",
+      "description": "High ceiling, filled with glittering crystals, reflecting flickering torchlight. Shadows dance across the floor. A grand, imposing atmosphere.",
+      "image_url": "",
+      "is_secret": false,
+      "x": 1,
+      "y": 0
+    },
+    {
+      "name": "Dark Passage",
+      "description": "Narrow, winding passage, darkness punctuated by faint, glowing mushrooms. Air thick with sulfur.",
+      "image_url": "",
+      "is_secret": false,
+      "x": 2,
+      "y": 0
+    },
+    {
+      "name": "Winding Path",
+      "description": "Narrow, winding path, lined with strange, glowing plants. Air filled with the scent of blooming flowers. Cute, strange creatures peek out from behind the foliage.",
+      "image_url": "",
+      "is_secret": false,
+      "x": 3,
+      "y": 0
+    },
+    {
+      "name": "Mystery Room",
+      "description": "Small, cozy room, filled with strange, alien artifacts. Whiskey scent strong here.",
+      "image_url": "",
+      "is_secret": false,
+      "x": 0,
+      "y": 1
+    },
+    {
+      "name": "Chasm",
+      "description": "Deep, yawning chasm, spanned by a rickety bridge. Wind whistles through the gap.",
+      "image_url": "",
+      "is_secret": false,
+      "x": 1,
+      "y": 1
+    },
+    {
+      "name": "Clearing",
+      "description": "Small, peaceful clearing, filled with a variety of strange, cute creatures. Sunlight filters through the trees.",
+      "image_url": "",
+      "is_secret": false,
+      "x": 2,
+      "y": 1
+    },
+    {
+      "name": "Hidden Loft",
+      "description": "Small, cozy loft, filled with strange, alien artifacts. Soft, whispery voice echoes through the space.",
+      "image_url": "",
+      "is_secret": false,
+      "x": 3,
+      "y": 1
+    },
+    {
+      "name": "Chasm Floor",
+      "description": "Rocky, barren floor of the chasm, lit by faint, glowing crystals. Air thick with the scent of damp earth.",
+      "image_url": "",
+      "is_secret": false,
+      "x": 0,
+      "y": 2
+    },
+    {
+      "name": "Hidden Platform",
+      "description": "Small, hidden platform, surrounded by a tangle of vines and flowers. Soft, warm breeze blows through the air.",
+      "image_url": "",
+      "is_secret": false,
+      "x": 1,
+      "y": 2
+    }
+  ],
+  "exits": [
+    {
+      "from": 0,
+      "to": 1,
+      "label": "Climb stairs"
+    },
+    {
+      "from": 0,
+      "to": 2,
+      "label": "Enter passage"
+    },
+    {
+      "from": 0,
+      "to": 3,
+      "label": "Follow path"
+    }
+  ],
+  "npcs": [
+    {
+      "room": 0,
+      "name": "Mystic Guardian",
+      "role": "Hooded figure, staff in hand",
+      "personality": "",
+      "dialogue_seed": "[Quest Giver] Mystic Guardian is looking for something...\nYou don't have what they're looking for yet.\n\"Welcome, seeker of secrets\""
+    }
+  ],
+  "items": [
+    {
+      "room": 0,
+      "name": "Alien Orb",
+      "description": "[Quest Item] "
+    },
+    {
+      "room": 0,
+      "name": "Stone Pedestal",
+      "description": "Carved stone pedestal, adorned with strange symbols"
+    }
+  ],
+  "quests": [
+    {
+      "title": "Glowing Mushroom",
+      "objective": "Mystic Guardian at Temple Gate needs: Glowing Mushroom.",
+      "reward": "Ancient Tome",
+      "giver_npc": 0
+    },
+    {
+      "title": "Alien Orb",
+      "objective": "Curious Explorer at Mystery Room needs: Alien Orb.",
+      "reward": "Map Fragment",
+      "giver_npc": null
+    },
+    {
+      "title": "Alien Device",
+      "objective": "Temple Priest at Clearing needs: Alien Device.",
+      "reward": "Blessed Amulet",
+      "giver_npc": null
+    }
+  ]
+}
