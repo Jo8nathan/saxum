@@ -362,8 +362,12 @@ a { color: var(--gold-soft); }
 .talk-bubble.you { align-self: flex-end; background: #3a3a55; border: 1px solid #4d4d73; }
 .talk-bubble.npc { align-self: flex-start; background: var(--bg-2); border: 1px solid var(--gold); }
 .talk-bubble.typing { color: var(--muted); }
+.talk-bubble.system { align-self: center; background: transparent; border: 1px dashed var(--muted); color: var(--muted); font-style: italic; font-size: 0.88rem; max-width: 95%; }
 .talk-form { display: flex; gap: 10px; }
 .talk-form .input { margin-bottom: 0; }
+.talk-give { border-top: 1px solid var(--bg-2); margin-top: 12px; padding-top: 10px; }
+.talk-give h5 { margin: 8px 0 6px; font-size: 0.92rem; }
+.give-list { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 4px; }
 
 /* ---------- toasts ---------- */
 .toasts {

@@ -100,6 +100,7 @@ CREATE TABLE quests (
   id        UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   world_id  UUID NOT NULL REFERENCES worlds(id) ON DELETE CASCADE,
   npc_id    UUID REFERENCES npcs(id) ON DELETE SET NULL,
+  required_item_id UUID REFERENCES items(id) ON DELETE SET NULL,
   title     TEXT NOT NULL,
   objective TEXT DEFAULT '',
   reward    TEXT DEFAULT '',
@@ -253,6 +254,7 @@ COMMENT ON COLUMN items.taken_by IS 'Identity id currently holding the item; NUL
 COMMENT ON TABLE quests IS 'Objectives, optionally given by an NPC.';
 COMMENT ON COLUMN quests.world_id IS 'Owning world (denormalized); cascade-deleted.';
 COMMENT ON COLUMN quests.npc_id IS 'Quest giver; set NULL if the NPC is deleted.';
+COMMENT ON COLUMN quests.required_item_id IS 'Item the player must hand to the quest giver to complete the quest; NULL means no item is required.';
 COMMENT ON COLUMN quests.title IS 'Quest title.';
 COMMENT ON COLUMN quests.objective IS 'What the player must do.';
 COMMENT ON COLUMN quests.reward IS 'Reward text shown on completion.';

@@ -45,7 +45,7 @@ Return ONLY a JSON object (no markdown, no commentary) with this exact shape:
   "exits": [ { "from": 0, "to": 1, "label": "North" } ],
   "npcs": [ { "room": 0, "name": "Name", "role": "Role", "personality": "1 sentence", "dialogue_seed": "2-3 sentences of persona/background the AI actor will use" } ],
   "items": [ { "room": 0, "name": "Item Name", "description": "1-2 sentences" } ],
-  "quests": [ { "title": "Quest Title", "objective": "What the player must do", "reward": "Reward name", "giver_npc": 0 } ]
+  "quests": [ { "title": "Quest Title", "objective": "What the player must do", "reward": "Reward name", "giver_npc": 0, "required_item": "Item Name" } ]
 }
 
 Rules:
@@ -53,6 +53,7 @@ Rules:
 - 3-6 NPCs total, each in a valid room index.
 - 4-8 items total, each in a valid room index. Exactly ONE secret room minimum.
 - 2-4 quests. "giver_npc" is a zero-based index into "npcs", or null if no giver.
+- At least one quest should be a FETCH quest: the player finds a specific item in the world and hands it to an NPC. For fetch quests set "required_item" to the EXACT name of an item from "items" and make the objective say who wants it. Other quests use "required_item": null.
 - Keep every string under 400 characters. No profanity. Keep it family-friendly.`;
 }
 
@@ -107,6 +108,10 @@ function normalizeOutline(raw, roomCount) {
       objective: String(q?.objective || '').slice(0, 1000),
       reward: String(q?.reward || '').slice(0, 300),
       giver_npc: validIdx(q?.giver_npc) ? q.giver_npc : null,
+      required_item:
+        typeof q?.required_item === 'string' && q.required_item.trim()
+          ? q.required_item.trim().slice(0, 120)
+          : null,
       sort: i,
     }));
 
@@ -183,19 +188,24 @@ async function insertWorldFromOutline(supabase, jobId, params, outline) {
   }
   await setJob(supabase, jobId, { progress: 80 });
 
-  // Items
+  // Items (capture id+name so quest required_item names can resolve)
+  let itemIdByName = new Map();
   if (outline.items.length > 0) {
-    const { error } = await supabase.from('items').insert(
-      outline.items.map((x) => ({
-        id: randomUUID(),
-        world_id: worldId,
-        room_id: roomIds[x.room],
-        name: x.name,
-        description: x.description,
-        taken_by: null,
-      }))
-    );
+    const { data: insertedItems, error } = await supabase
+      .from('items')
+      .insert(
+        outline.items.map((x) => ({
+          id: randomUUID(),
+          world_id: worldId,
+          room_id: roomIds[x.room],
+          name: x.name,
+          description: x.description,
+          taken_by: null,
+        }))
+      )
+      .select('id,name');
     if (error) throw error;
+    itemIdByName = new Map((insertedItems || []).map((it) => [it.name.toLowerCase(), it.id]));
   }
   await setJob(supabase, jobId, { progress: 85 });
 
@@ -221,6 +231,10 @@ async function insertWorldFromOutline(supabase, jobId, params, outline) {
         id: randomUUID(),
         world_id: worldId,
         npc_id: q.giver_npc === null ? null : npcIds[q.giver_npc],
+        required_item_id:
+          q.required_item && itemIdByName.get(q.required_item.toLowerCase())
+            ? itemIdByName.get(q.required_item.toLowerCase())
+            : null,
         title: q.title,
         objective: q.objective,
         reward: q.reward,

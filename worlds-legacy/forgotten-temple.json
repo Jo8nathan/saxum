@@ -137,7 +137,8 @@
       "title": "Alien Orb",
       "objective": "Curious Explorer at Mystery Room needs: Alien Orb.",
       "reward": "Map Fragment",
-      "giver_npc": null
+      "giver_npc": null,
+      "required_item": "Alien Orb"
     },
     {
       "title": "Alien Device",

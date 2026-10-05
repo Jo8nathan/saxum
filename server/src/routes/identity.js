@@ -24,7 +24,7 @@ router.post('/', async (req, res, next) => {
     if (!label) return res.status(400).json({ error: 'label must not be blank' });
 
     const supabase = getSupabase();
-    await ensureIdentity(supabase, identityId, label);
+    await ensureIdentity(supabase, identityId, label, { setLabel: true });
     await supabase.from('worlds').update({ author_label: label }).eq('owner_id', identityId);
 
     res.json({ id: identityId, label });

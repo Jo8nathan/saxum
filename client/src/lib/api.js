@@ -108,6 +108,12 @@ export const api = {
       body: { identity_id: identityId, item_id: itemId },
     }),
 
+  giveItem: (id, identityId, npcId, itemId) =>
+    request(`/worlds/${encodeURIComponent(id)}/give`, {
+      method: 'POST',
+      body: { identity_id: identityId, npc_id: npcId, item_id: itemId },
+    }),
+
   completeQuest: (id, questId, identityId) =>
     request(`/worlds/${encodeURIComponent(id)}/quests/${encodeURIComponent(questId)}/complete`, {
       method: 'POST',

@@ -106,6 +106,9 @@ function validate(data) {
     if (typeof q !== 'object' || q === null) fail(`quests[${i}] must be an object`);
     if (!isNonEmptyString(q.title)) fail(`quests[${i}].title is required and must be a non-empty string`);
     if (q.giver_npc !== undefined && q.giver_npc !== null) checkIndex(q.giver_npc, npcs.length, '"giver_npc"', `quests[${i}]`);
+    if (q.required_item !== undefined && q.required_item !== null && !isNonEmptyString(q.required_item)) {
+      fail(`quests[${i}].required_item must be a non-empty string matching an item name`);
+    }
   });
 
   if (data.image_style !== undefined && data.image_style !== null && !IMAGE_STYLES.includes(data.image_style)) {
@@ -201,7 +204,7 @@ async function main() {
   );
 
   // 3b. items (need room ids; room omitted/null => unplaced, room_id NULL)
-  await insertAll(
+  const itemIds = await insertAll(
     supabase,
     'items',
     items.map((it) => ({
@@ -211,6 +214,7 @@ async function main() {
       description: str(it.description),
     }))
   );
+  const itemIdByName = new Map(items.map((it, i) => [it.name.trim().toLowerCase(), itemIds[i]]));
 
   // 4. exits (need room ids)
   await insertAll(
@@ -224,18 +228,26 @@ async function main() {
     }))
   );
 
-  // 5. quests (need npc ids)
+  // 5. quests (need npc ids; required_item names resolve to item ids)
   await insertAll(
     supabase,
     'quests',
-    quests.map((q, i) => ({
-      world_id: worldId,
-      npc_id: q.giver_npc === undefined || q.giver_npc === null ? null : npcIds[q.giver_npc],
-      title: q.title.trim(),
-      objective: str(q.objective),
-      reward: str(q.reward),
-      sort: i,
-    }))
+    quests.map((q, i) => {
+      let required_item_id = null;
+      if (q.required_item !== undefined && q.required_item !== null) {
+        required_item_id = itemIdByName.get(String(q.required_item).trim().toLowerCase()) || null;
+        if (!required_item_id) fail(`quests[${i}].required_item "${q.required_item}" matches no item in this world`);
+      }
+      return {
+        world_id: worldId,
+        npc_id: q.giver_npc === undefined || q.giver_npc === null ? null : npcIds[q.giver_npc],
+        required_item_id,
+        title: q.title.trim(),
+        objective: str(q.objective),
+        reward: str(q.reward),
+        sort: i,
+      };
+    })
   );
 
   console.log(`Imported world "${data.title.trim()}"`);

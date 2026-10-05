@@ -151,6 +151,7 @@ export default function PlayView() {
   const [talkInput, setTalkInput] = useState('')
   const [talkSending, setTalkSending] = useState(false)
   const [talkError, setTalkError] = useState('')
+  const [giving, setGiving] = useState(false)
 
   const [galleryOpen, setGalleryOpen] = useState(false)
   const [toasts, setToasts] = useState([])
@@ -240,6 +241,8 @@ export default function PlayView() {
     (it) => (it.room_id ?? it.roomId) === currentRoomId && !it.taken_by,
   )
   const inventory = items.filter((it) => it.taken_by === identity.id)
+  const itemNameById = Object.fromEntries(items.map((it) => [it.id, it.name]))
+  const npcNameById = Object.fromEntries(npcs.map((n) => [n.id, n.name]))
   const roomExits = exits.filter((e) => exitFrom(e) === currentRoomId)
 
   const move = (roomId) => {
@@ -275,6 +278,33 @@ export default function PlayView() {
       refreshProgress()
     } catch (e) {
       setActionError(e.message || 'Could not complete the quest.')
+    }
+  }
+
+  const giveItemToNpc = async (item) => {
+    if (!talkNpc || giving) return
+    setGiving(true)
+    setTalkError('')
+    try {
+      const res = await api.giveItem(id, identity.id, talkNpc.id, item.id)
+      setItems((prev) => prev.map((it) =>
+        it.id === item.id ? { ...it, taken_by: res.item.taken_by } : it,
+      ))
+      const lines = [`You gave the ${res.item.name} to ${res.npc.name}.`]
+      for (const q of res.completed_quests || []) {
+        lines.push(`✅ Quest complete: ${q.title}${q.reward ? ` — Reward: ${q.reward}` : ''}`)
+      }
+      setTalkMessages((prev) => [...prev, { from: 'system', text: lines.join('\n') }])
+      const newIds = (res.completed_quests || []).map((q) => q.id)
+      if (newIds.length > 0) {
+        setCompletedQuestIds((prev) => [...prev, ...newIds.filter((qid) => !prev.includes(qid))])
+      }
+      pushAchievements(res && res.newly_unlocked)
+      refreshProgress()
+    } catch (e) {
+      setTalkError(e.message || 'Could not give the item.')
+    } finally {
+      setGiving(false)
     }
   }
 
@@ -427,16 +457,27 @@ export default function PlayView() {
                 {quests.map((q) => {
                   const qid = questIdOf(q)
                   const done = q.completed || completedQuestIds.includes(qid)
+                  const reqItemName = q.required_item_id ? (itemNameById[q.required_item_id] || 'a required item') : null
+                  const giverName = q.npc_id ? npcNameById[q.npc_id] : null
                   return (
                     <li key={qid || questName(q)} className="entity-row">
                       <div>
                         <strong>{done ? '✅ ' : ''}{questName(q)}</strong>
                         {questDesc(q) && <p className="hint entity-sub">{questDesc(q)}</p>}
+                        {reqItemName && !done && (
+                          <p className="hint entity-sub">
+                            🎁 Needs: <strong>{reqItemName}</strong>
+                            {giverName ? ` — give it to ${giverName} while talking` : ' — give it to an NPC while talking'}
+                          </p>
+                        )}
                       </div>
-                      {!done && (
+                      {!done && !reqItemName && (
                         <button className="btn btn-small" onClick={() => completeQuest(q)}>
                           Complete
                         </button>
+                      )}
+                      {!done && reqItemName && (
+                        <span className="hint">Give the item to solve</span>
                       )}
                     </li>
                   )
@@ -512,7 +553,7 @@ export default function PlayView() {
                   <p className="hint">Say something to {talkNpc.name}…</p>
                 )}
                 {talkMessages.map((m, i) => (
-                  <div key={i} className={'talk-bubble ' + (m.from === 'you' ? 'you' : 'npc')}>
+                  <div key={i} className={'talk-bubble ' + (m.from === 'you' ? 'you' : m.from === 'system' ? 'system' : 'npc')}>
                     {m.text}
                   </div>
                 ))}
@@ -532,6 +573,56 @@ export default function PlayView() {
                   Send
                 </button>
               </form>
+              <div className="talk-give">
+                {(() => {
+                  const wanted = quests.filter((q) =>
+                    !completedQuestIds.includes(questIdOf(q)) &&
+                    q.required_item_id &&
+                    (!q.npc_id || q.npc_id === talkNpc.id),
+                  )
+                  const held = items.filter((it) => it.taken_by === `npc:${talkNpc.id}`)
+                  return (
+                    <>
+                      {wanted.length > 0 && (
+                        <p className="hint">💡 {talkNpc.name} wants: {wanted.map((q) => itemNameById[q.required_item_id] || 'an item').join(', ')}</p>
+                      )}
+                      <h5>🎁 Give an item</h5>
+                      {inventory.length === 0 ? (
+                        <p className="hint">Your pockets are empty.</p>
+                      ) : (
+                        <div className="give-list">
+                          {inventory.map((item) => (
+                            <button
+                              key={item.id}
+                              className="btn btn-small"
+                              disabled={giving}
+                              onClick={() => giveItemToNpc(item)}
+                            >
+                              Give {item.name}
+                            </button>
+                          ))}
+                        </div>
+                      )}
+                      {held.length > 0 && (
+                        <>
+                          <h5>Holding for you</h5>
+                          <div className="give-list">
+                            {held.map((item) => (
+                              <button
+                                key={item.id}
+                                className="btn btn-small btn-ghost"
+                                onClick={() => takeItem(item)}
+                              >
+                                Take back {item.name}
+                              </button>
+                            ))}
+                          </div>
+                        </>
+                      )}
+                    </>
+                  )
+                })()}
+              </div>
             </div>
           </div>
         </div>

@@ -340,19 +340,22 @@
       "title": "Underwater Map",
       "objective": "Dive Master at Entrance Hall needs: Underwater Map.",
       "reward": "Enhanced Tank",
-      "giver_npc": 0
+      "giver_npc": 0,
+      "required_item": "Underwater Map"
     },
     {
       "title": "Sonar Device",
       "objective": "Submarine Pilot at Lower Depths needs: Sonar Device.",
       "reward": "Submarine Key",
-      "giver_npc": 1
+      "giver_npc": 1,
+      "required_item": "Sonar Device"
     },
     {
       "title": "Crystal Shard",
       "objective": "Marine Biologist at Underwater Cavern needs: Crystal Shard.",
       "reward": "Oceanic Encyclopedia",
-      "giver_npc": 2
+      "giver_npc": 2,
+      "required_item": "Crystal Shard"
     }
   ]
 }

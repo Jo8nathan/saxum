@@ -78,6 +78,7 @@ Both directions need their own entry.
 | `objective` | string | no | Defaults to `""`. |
 | `reward` | string | no | Defaults to `""`. |
 | `giver_npc` | integer \| null | no | Index into `npcs[]`; `null`/omitted means no quest giver (`npc_id` NULL). |
+| `required_item` | string \| null | no | Exact name of an item in `items[]` the player must hand to the quest giver to complete the quest (`null`/omitted = no item required). Matched case-insensitively. |
 
 Import order within quests sets `quests.sort` (0, 1, 2, …).
 
@@ -91,7 +92,7 @@ The importer exits non-zero with a message naming the offending field when:
 - any exit's `from`/`to` is not a valid index into `rooms[]`;
 - any NPC's `room` (when given) is not a valid index into `rooms[]`, or an NPC lacks a non-empty `name`;
 - any item's `room` (when given) is not a valid index into `rooms[]`, or an item lacks a non-empty `name`;
-- any quest's `giver_npc` (when given) is not a valid index into `npcs[]`, or a quest lacks a non-empty `title`;
+- any quest's `giver_npc` (when given) is not a valid index into `npcs[]`, or a quest lacks a non-empty `title`, or a quest's `required_item` (when given) matches no item name in `items[]`;
 - `image_style` is not one of the three allowed values;
 - `is_public` is present but not a boolean;
 - any insert fails (message includes the Supabase error).

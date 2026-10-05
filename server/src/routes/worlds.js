@@ -442,7 +442,9 @@ router.post('/:id/take', async (req, res, next) => {
       .eq('world_id', worldId)
       .maybeSingle();
     if (!item) return res.status(404).json({ error: 'Item not found in this world' });
-    if (item.taken_by && item.taken_by !== identityId) {
+    // Items held by an NPC ('npc:<id>') can be taken back by anyone; items in
+    // another player's inventory cannot.
+    if (item.taken_by && item.taken_by !== identityId && !item.taken_by.startsWith('npc:')) {
       return res.status(400).json({ error: 'That item has already been taken' });
     }
 
@@ -472,6 +474,101 @@ router.post('/:id/take', async (req, res, next) => {
 });
 
 /* ------------------------------------------------------------------ */
+/* POST /api/worlds/:id/give — hand an inventory item to an NPC         */
+/* ------------------------------------------------------------------ */
+/*
+ * Body: { identity_id, npc_id, item_id }
+ * Removes the item from the player's inventory and records it as held by
+ * the NPC. Completes any incomplete fetch quest in this world that requires
+ * this item when the giver is this NPC (or the quest names no giver).
+ */
+router.post('/:id/give', async (req, res, next) => {
+  try {
+    const worldId = uuid(req.params.id, 'id');
+    const identityId = str(req.body?.identity_id, 'identity_id', { max: 200 });
+    const npcId = uuid(req.body?.npc_id, 'npc_id');
+    const itemId = uuid(req.body?.item_id, 'item_id');
+    const supabase = getSupabase();
+    const world = await getWorldOr404(supabase, worldId, res);
+    if (!world) return;
+    await ensureIdentity(supabase, identityId, 'Explorer');
+
+    const { data: npc } = await supabase
+      .from('npcs')
+      .select('id,name')
+      .eq('id', npcId)
+      .eq('world_id', worldId)
+      .maybeSingle();
+    if (!npc) return res.status(404).json({ error: 'NPC not found in this world' });
+
+    const { data: item } = await supabase
+      .from('items')
+      .select('*')
+      .eq('id', itemId)
+      .eq('world_id', worldId)
+      .maybeSingle();
+    if (!item) return res.status(404).json({ error: 'Item not found in this world' });
+
+    const progress = await upsertProgressRow(supabase, worldId, identityId);
+    const collected = progress.items_collected || [];
+    if (!collected.includes(itemId) || item.taken_by !== identityId) {
+      return res.status(400).json({ error: `You don't have the ${item.name}.` });
+    }
+
+    // Hand it over: out of the inventory, recorded as held by the NPC.
+    // (NPC-held items can be taken back via the take endpoint.)
+    const heldBy = `npc:${npcId}`;
+    const { error: itemErr } = await supabase
+      .from('items')
+      .update({ taken_by: heldBy })
+      .eq('id', itemId);
+    if (itemErr) throw itemErr;
+
+    const items_collected = collected.filter((x) => x !== itemId);
+    const { error: progErr } = await supabase
+      .from('progress')
+      .update({ items_collected })
+      .eq('id', progress.id);
+    if (progErr) throw progErr;
+
+    const { data: quests } = await supabase
+      .from('quests')
+      .select('id,title,reward,npc_id')
+      .eq('world_id', worldId)
+      .eq('required_item_id', itemId);
+    const doneSet = new Set(progress.quests_completed || []);
+    const matched = (quests || []).filter(
+      (q) => !doneSet.has(q.id) && (!q.npc_id || q.npc_id === npcId)
+    );
+
+    const completed_quests = [];
+    if (matched.length > 0) {
+      const quests_completed = [...(progress.quests_completed || [])];
+      for (const q of matched) {
+        if (!quests_completed.includes(q.id)) quests_completed.push(q.id);
+        completed_quests.push({ id: q.id, title: q.title, reward: q.reward || '' });
+      }
+      const { error: qErr } = await supabase
+        .from('progress')
+        .update({ quests_completed })
+        .eq('id', progress.id);
+      if (qErr) throw qErr;
+    }
+
+    const newly_unlocked = await checkAndUnlock(supabase, identityId);
+    res.json({
+      ok: true,
+      item: { id: item.id, name: item.name, taken_by: heldBy },
+      npc: { id: npc.id, name: npc.name },
+      completed_quests,
+      newly_unlocked,
+    });
+  } catch (err) {
+    next(err);
+  }
+});
+
+/* ------------------------------------------------------------------ */
 /* POST /api/worlds/:id/quests/:quest_id/complete                      */
 /* ------------------------------------------------------------------ */
 
@@ -487,11 +584,32 @@ router.post('/:id/quests/:quest_id/complete', async (req, res, next) => {
 
     const { data: quest } = await supabase
       .from('quests')
-      .select('id')
+      .select('id,title,required_item_id,npc_id')
       .eq('id', questId)
       .eq('world_id', worldId)
       .maybeSingle();
     if (!quest) return res.status(404).json({ error: 'Quest not found in this world' });
+
+    if (quest.required_item_id) {
+      // Fetch quests are solved by handing the item to the NPC, not by button.
+      const { data: reqItem } = await supabase
+        .from('items')
+        .select('name')
+        .eq('id', quest.required_item_id)
+        .maybeSingle();
+      let npcName = 'the quest giver';
+      if (quest.npc_id) {
+        const { data: giver } = await supabase
+          .from('npcs')
+          .select('name')
+          .eq('id', quest.npc_id)
+          .maybeSingle();
+        if (giver && giver.name) npcName = giver.name;
+      }
+      return res.status(400).json({
+        error: `This quest needs the ${reqItem?.name || 'required item'} — give it to ${npcName} while talking to them.`,
+      });
+    }
 
     let progress = await upsertProgressRow(supabase, worldId, identityId);
     const quests_completed = addUnique(progress.quests_completed, questId);
