@@ -505,10 +505,10 @@ export default function PlayView() {
             <p className="hint">{Math.round(progressPct)}% explored</p>
             {progress && (
               <ul className="stat-list">
-                <li>🚪 Rooms visited: <strong>{progress.rooms_visited ?? '—'}</strong></li>
-                <li>📜 Quests completed: <strong>{progress.quests_completed ?? '—'}</strong></li>
-                <li>🎒 Items collected: <strong>{progress.items_collected ?? '—'}</strong></li>
-                <li>🕵️ Secrets found: <strong>{progress.secrets_found ?? '—'}</strong></li>
+                <li>🚪 Rooms visited: <strong>{progress.rooms_visited?.length ?? '—'}</strong></li>
+                <li>📜 Quests completed: <strong>{progress.quests_completed?.length ?? '—'}</strong></li>
+                <li>🎒 Items collected: <strong>{progress.items_collected?.length ?? '—'}</strong></li>
+                <li>🕵️ Secrets found: <strong>{progress.secrets_found?.length ?? '—'}</strong></li>
                 <li>💬 Conversations: <strong>{progress.conversations ?? '—'}</strong></li>
               </ul>
             )}
